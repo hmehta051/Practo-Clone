@@ -1,0 +1,75 @@
+#medicineSearch{
+    border: solid 1px #42BFF0;
+    width: 55%;
+}
+
+#medicineSearch input{
+    border: transparent;    
+    width: 90%;
+    height: 50px;
+    color: #787887;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#Medicinecart{
+    background-color: #42BFF0;
+    color: white;
+    height: 50px;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Arial
+}
+
+.mediFlex{
+    display: flex;
+}
+
+.meditop{
+    margin-left: 10%;
+    justify-content: space-between;
+    margin-right: 15%;
+}
+
+#mediCarousel img{
+    width: 100%;
+}
+
+.btnCarousel{
+    z-index: 5;
+    position: absolute;
+    left: 5%;
+    margin-top: 10%;
+}    
+
+.rightBtn{
+    right: 5%;
+    z-index: 5;
+    position: absolute;
+    margin-top: 10%;    
+}
+
+.mediMenu{
+    color: #2d2d32;
+    font-family: Camphor,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.mediSubHeading{
+    color: #414146;
+    font-family: Camphor,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+        
+}
+
+.displaymediMenu{
+    text-align: left;
+    margin-left: 5%;
+}
