@@ -1,14 +1,45 @@
 import "../styles/MainPage.css";
 import {Link} from "react-router-dom";
+import styled from 'styled-components';
 
 export const MainPage = () =>{
+
+    const StyledLink = styled(Link)`
+    color: Black;
+    text-decoration: none;
+
+    &:hover{
+        color:black;
+        text-decoration:underline;
+    }
+
+    &:focus{
+        color:#13BEF0;
+        padding-bottom:1rem;
+        border-bottom: 3px solid #13BEF0;
+        text-decoration:none;
+    }
+  `;
+
+    const StyledLinkRegister = styled(Link)`
+    color: Black;
+    text-decoration: none;
+
+    &{
+        color:#13BEF0;
+        padding-bottom:1rem;
+        border-bottom: 3px solid #13BEF0;
+        text-decoration:none;
+    }
+    `;  
+
     return <div className="main-container">
     Navbar
      <div className="second-container">
 
          <div className="third-container-top">
-        <Link to="/login"><span>Login</span></Link> 
-         <Link to="/signup"><span>Register</span></Link>
+         <span><StyledLink to="/login">Login</StyledLink> </span>
+         <span><StyledLinkRegister to="/signup">Register</StyledLinkRegister></span>
          </div>
          <hr/>
          <div id="third-container-body">

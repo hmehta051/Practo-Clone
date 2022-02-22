@@ -13,15 +13,10 @@ body{
 .third-container-top{
     margin:auto;
     padding:0.5rem;
-
+    text-align: center;
 }
 .third-container-top>span{
-    color:black;
-    margin:auto;
-}
-div>Link>span:hover{
-    text-decoration: underline;
-    text-decoration-color: black;
+    margin:3%;
 }
 
 #third-container-body{ 
