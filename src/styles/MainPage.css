@@ -1,0 +1,46 @@
+body{
+    color: white;
+    font-family: 'Camphor' !important;
+}
+.main-container{
+    width:100%;
+    border:1px solid blue;
+}
+.second-container{
+    width:70%;
+    border:1px solid black;
+    height:500px;
+    margin-left:15%;
+}
+#third-container-top{
+    margin:auto;
+    padding:0.5rem;
+    border:1px solid green;
+    display:flex;
+}
+#third-container-top>div{
+    color:black;
+}
+#third-container-top>div:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+
+}
+#third-container-top>div:focus{
+    color:rgb(0, 183, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 183, 255);;    
+}
+#third-container-body{
+    border:2px solid purple; 
+}
+#imgOnLeft{
+    width:40%;
+    height:100%;
+    border:1px solid yellow;
+    padding:3%;
+}
+
+
+
+
