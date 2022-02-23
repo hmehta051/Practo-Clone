@@ -1,6 +1,6 @@
 body{
     color: white;
-    font-family: 'Camphor';
+    font-family: 'CamphorW01-Regular';
 }
 .main-container{
     width:100%;
@@ -48,9 +48,9 @@ body{
     font-size:16px;
 }
 .Heading > p{
-    margin-left: 6.5rem;
+    margin-left: 5rem;
     margin-top: 1.4rem;
-    font-size: 13px;
+    font-size: 14px;
 }
 .Line{
     margin-top: -0.8rem;
@@ -121,7 +121,7 @@ label{
 }
 .here{
     color:orange;
-    font-size: 12px;
+    font-size: 11px;
 }
 .smalla{
     text-decoration: none;

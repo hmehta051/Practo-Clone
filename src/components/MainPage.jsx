@@ -53,7 +53,7 @@ export const MainPage = () =>{
                 <p>Are you a doctor? <a className="here">Register Here</a></p>
             </div>
             <hr className="Line"/>
-            <br/>
+            
             <div id="inp">Full Name</div>
             <input type="text" name="name"  placeholder="Full Name" />
             <div id="inp">Mobile Number</div>
