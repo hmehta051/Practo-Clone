@@ -21,6 +21,7 @@ body{
 
 #third-container-body{ 
     display: flex;
+    margin-top: 2%;
 }
 #imgOnLeft{
     width:40%;
