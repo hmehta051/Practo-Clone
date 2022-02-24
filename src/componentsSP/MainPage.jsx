@@ -33,7 +33,7 @@ text-decoration: none;
 }
 `;
 
-export const MainPage = () =>{
+export const MainPage = () =>{ //Signup function
 
   
     // the name would be saved in the store, so that it is accesible TO BE DONE LATER
@@ -96,7 +96,7 @@ export const MainPage = () =>{
                 <input type="checkbox" /><label>Receive relevant offers and promotional communication from practo</label>
             </div>
             <p className="smallp">By signing up, I agree to <a className="smalla">terms</a></p>
-            <div className="button" onClick={()=>{mob.length===10 ? registerUser():alert("Enter Valid ContactNo.");}}>Register</div>
+            <div className="button" onClick={()=>{mob.length===10 ? registerUser():alert("Enter Valid User Details");}}>Register</div>
 
              </div>
          </div>

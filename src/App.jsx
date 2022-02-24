@@ -1,6 +1,6 @@
 import {Routes,Route} from 'react-router-dom';
-import { Login } from './components/Login';
-import { MainPage } from './components/MainPage';
+import { Login } from './componentsSP/Login';
+import { MainPage } from './componentsSP/MainPage';
 
 function App() {
   return (
