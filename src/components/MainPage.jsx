@@ -1,37 +1,60 @@
 import "../styles/MainPage.css";
 import {Link} from "react-router-dom";
 import styled from 'styled-components';
+import { useState } from "react";
+import axios from "axios";
+
+const StyledLink = styled(Link)`
+color: Black;
+text-decoration: none;
+
+&:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+&:focus{
+    color:#13BEF0;
+    padding-bottom:1rem;
+    border-bottom: 3px solid #13BEF0;
+    text-decoration:none;
+}
+`;
+
+const StyledLinkRegister = styled(Link)`
+color: Black;
+text-decoration: none;
+
+&{
+    color:#13BEF0;
+    padding-bottom:1rem;
+    border-bottom: 3px solid #13BEF0;
+    text-decoration:none;
+}
+`;
 
 export const MainPage = () =>{
 
-    const StyledLink = styled(Link)`
-    color: Black;
-    text-decoration: none;
+  
+    // the name would be saved in the store, so that it is accesible TO BE DONE LATER
+    let [naam,setName]=useState("");
+    let [email,setEmail]=useState("");
+    let [mob,setMob]=useState(0);
+    let [pass,setPass]=useState("");
 
-    &:hover{
-        color:black;
-        text-decoration:underline;
+    const registerUser = ()=>{
+        axios.post("http://localhost:2345/register",{
+            name:naam,
+            email:email,
+            password:pass,
+            mobile:mob,
+         }).then(({data})=>{  
+             alert(data.message);
+           })
+           .catch((error)=>{
+               alert(error);
+           })
     }
-
-    &:focus{
-        color:#13BEF0;
-        padding-bottom:1rem;
-        border-bottom: 3px solid #13BEF0;
-        text-decoration:none;
-    }
-  `;
-
-    const StyledLinkRegister = styled(Link)`
-    color: Black;
-    text-decoration: none;
-
-    &{
-        color:#13BEF0;
-        padding-bottom:1rem;
-        border-bottom: 3px solid #13BEF0;
-        text-decoration:none;
-    }
-    `;  
 
     return <div className="main-container">
     Navbar
@@ -55,18 +78,19 @@ export const MainPage = () =>{
             <hr className="Line"/>
             
             <div id="inp">Full Name</div>
-            <input type="text" name="name"  placeholder="Full Name" />
+            <input type="text" placeholder="Full Name" onChange={(e)=>{setName(e.target.value)}}/>
+            <div id="inp">Email</div>
+            <input type="email" placeholder="Enter Email" onChange={(e)=>{setEmail(e.target.value)}}/>
             <div id="inp">Mobile Number</div>
-            <input type="text" name="mobile"  placeholder="Mobile Number"  />
+            <input type="text" placeholder="0123456789" onChange={(e)=>{setMob(e.target.value)}}/>
             <div id="inp">Create Password</div>
-            <input type="password" name="password"  placeholder="Create password" />
-            <br/>
+            <input type="password" placeholder="Create password" onChange={(e)=>{setPass(e.target.value)}}/>
             <br/>
             <div className="check">
                 <input type="checkbox" /><label>Receive relevant offers and promotional communication from practo</label>
             </div>
             <p className="smallp">By signing up, I agree to <a className="smalla">terms</a></p>
-            <div className="button">Register</div>
+            <div className="button" onClick={()=>{mob.length===10 ? registerUser():alert("Enter Valid ContactNo.");}}>Register</div>
 
              </div>
          </div>

@@ -1,37 +1,68 @@
 import "../styles/Login.css";
 import {Link} from "react-router-dom";
 import styled from 'styled-components';
+import { useState } from "react";
+import axios from "axios";
+
+const StyledLink = styled(Link)`
+color: Black;
+text-decoration: none;
+
+&:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+&:focus{
+    color:#13BEF0;
+    padding-bottom:1rem;
+    border-bottom: 3px solid #13BEF0;
+    text-decoration:none;
+}
+`;
+
+const StyledLinkLogin = styled(Link)`
+color: Black;
+text-decoration: none;
+
+&{
+    color:#13BEF0;
+    padding-bottom:1rem;
+    border-bottom: 3px solid #13BEF0;
+    text-decoration:none;
+}
+`; 
+
 
 export const Login = () =>{
 
-    const StyledLink = styled(Link)`
-    color: Black;
-    text-decoration: none;
+    let [email,setEmail]=useState("");
+    let [mob,setMob]=useState(0);
+    let [pass,setPass]=useState("");
 
-    &:hover{
-        color:black;
-        text-decoration:underline;
+    const LoginUser = ()=>{
+        
+        axios.post("http://localhost:2345/login",{
+            email,
+            password:pass,
+         }).then(({data})=>{  
+            alert(data.message);
+          })
+           
+      //    console.log("Email Active"+mob);
+    } 
+
+    const LoginUserMob = ()=>{
+        
+        axios.post("http://localhost:2345/loginmobile",{
+            password:pass,
+            mobile:mob,
+         }).then(({data})=>{  
+            alert(data.message);
+          })
+           
+     //     console.log("Mobile number Active"+email);
     }
-
-    &:focus{
-        color:#13BEF0;
-        padding-bottom:1rem;
-        border-bottom: 3px solid #13BEF0;
-        text-decoration:none;
-    }
-  `;
-
-    const StyledLinkLogin = styled(Link)`
-    color: Black;
-    text-decoration: none;
-
-    &{
-        color:#13BEF0;
-        padding-bottom:1rem;
-        border-bottom: 3px solid #13BEF0;
-        text-decoration:none;
-    }
-    `;  
 
     return <div className="main-contain">
     Navbar
@@ -47,9 +78,17 @@ export const Login = () =>{
              <div id="formOnRightLogin">
                  
             <div id="inp">Mobile Number/Email ID</div>
-            <input type="text" name="mobile"  placeholder="Mobile Number/Email ID"  />
+            <input placeholder="Mobile Number/Email ID" onChange={(e)=>{ 
+               // console.log(typeof(e.target.value));
+                if(e.target.value.length<=10){  //Find better method
+                setMob(e.target.value);
+                }
+                else{
+                    setEmail(e.target.value);
+                }
+                }}/>
             <div id="inp">Password</div>
-            <input type="password" name="password"  placeholder="Password" />
+            <input type="password" placeholder="Password" onChange={(e)=>{setPass(e.target.value)}}/>
             <br/>
             <br/>
             <div className="check">
@@ -58,7 +97,16 @@ export const Login = () =>{
             <div className="check">
                 <input type="checkbox" /><label>Login with OTP instead of password</label>
             </div>            
-            <div className="button">Login</div>
+            <div className="button" onClick={()=>{
+                console.log(email);
+                console.log(mob);
+                if(email!==""){
+                     LoginUser();
+                }
+                else if(mob!==0){
+                     LoginUserMob();
+                }
+            }}>Login</div>
 
              </div>
          </div>
