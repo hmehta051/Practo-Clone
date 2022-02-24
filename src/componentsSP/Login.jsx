@@ -47,6 +47,9 @@ export const Login = () =>{
             password:pass,
          }).then(({data})=>{  
             alert(data.message);
+            if(data.status==="success"){
+                //window.location.replace("http://localhost:3000/login"); main page
+             }            
           })
            
       //    console.log("Email Active"+mob);
@@ -59,6 +62,9 @@ export const Login = () =>{
             mobile:mob,
          }).then(({data})=>{  
             alert(data.message);
+            if(data.status==="success"){
+               // window.location.replace("http://localhost:3000/login"); main page
+             }            
           })
            
      //     console.log("Mobile number Active"+email);
@@ -77,17 +83,17 @@ export const Login = () =>{
              <div id="imgOnLeft"><img src="https://accounts.practo.com/static/images/illustration.png" width="400px"/></div>
              <div id="formOnRightLogin">
                  
-            <div id="inp">Mobile Number/Email ID</div>
+            <div id="inp">Mobile Number/Email ID <span style={{fontSize:"10px",color:"red"}}>*</span></div>
             <input placeholder="Mobile Number/Email ID" onChange={(e)=>{ 
                // console.log(typeof(e.target.value));
-                if(e.target.value.length<=10){  //Find better method
+                if(e.target.value.length<=10){  
                 setMob(e.target.value);
                 }
                 else{
                     setEmail(e.target.value);
                 }
                 }}/>
-            <div id="inp">Password</div>
+            <div id="inp">Password <span style={{fontSize:"10px",color:"red"}}>*</span></div>
             <input type="password" placeholder="Password" onChange={(e)=>{setPass(e.target.value)}}/>
             <br/>
             <br/>

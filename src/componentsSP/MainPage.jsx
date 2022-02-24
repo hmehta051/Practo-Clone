@@ -42,6 +42,7 @@ export const MainPage = () =>{
     let [mob,setMob]=useState(0);
     let [pass,setPass]=useState("");
 
+
     const registerUser = ()=>{
         axios.post("http://localhost:2345/register",{
             name:naam,
@@ -50,11 +51,16 @@ export const MainPage = () =>{
             mobile:mob,
          }).then(({data})=>{  
              alert(data.message);
+             if(data.status==="success"){
+                window.location.replace("http://localhost:3000/login");
+             }
            })
            .catch((error)=>{
                alert(error);
            })
     }
+
+
 
     return <div className="main-container">
     Navbar
@@ -77,12 +83,12 @@ export const MainPage = () =>{
             </div>
             <hr className="Line"/>
             
-            <div id="inp">Full Name</div>
+            <div id="inp">Full Name <span style={{fontSize:"10px",color:"red"}}>*</span></div>
             <input type="text" placeholder="Full Name" onChange={(e)=>{setName(e.target.value)}}/>
-            <div id="inp">Email</div>
+            <div id="inp">Email <span style={{fontSize:"10px",color:"red"}}>*</span></div>
             <input type="email" placeholder="Enter Email" onChange={(e)=>{setEmail(e.target.value)}}/>
-            <div id="inp">Mobile Number</div>
-            <input type="text" placeholder="0123456789" onChange={(e)=>{setMob(e.target.value)}}/>
+            <div id="inp">Mobile Number <span style={{fontSize:"10px",color:"red"}}>*</span></div>
+            <input type="text" placeholder="Enter 10 digit mobile number" onChange={(e)=>{setMob(e.target.value)}}/>
             <div id="inp">Create Password</div>
             <input type="password" placeholder="Create password" onChange={(e)=>{setPass(e.target.value)}}/>
             <br/>
