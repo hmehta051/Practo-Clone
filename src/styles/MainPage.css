@@ -9,6 +9,7 @@ body{
     width:70%;
     height:500px;
     margin-left:15%;
+    margin-bottom: 10%;
 }
 .third-container-top{
     margin:auto;
@@ -52,6 +53,9 @@ body{
     margin-left: 5rem;
     margin-top: 1.4rem;
     font-size: 14px;
+}
+.upLine{
+    border: 1px solid #dddfe2;    
 }
 .Line{
     margin-top: -0.8rem;

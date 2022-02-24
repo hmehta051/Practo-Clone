@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useState } from "react";
 import axios from "axios";
 
+
 const StyledLink = styled(Link)`
 color: Black;
 text-decoration: none;
@@ -71,7 +72,7 @@ export const MainPage = () =>{ //Signup function
          <span><StyledLink to="/login">Login</StyledLink> </span>
          <span><StyledLinkRegister to="/signup">Register</StyledLinkRegister></span>
          </div>
-         <hr/>
+         <hr className="upLine"/>
          <div id="third-container-body">
              <div id="imgOnLeft"><img src="https://accounts.practo.com/static/images/illustration.png" width="400px"/></div>
              <div id="formOnRight">

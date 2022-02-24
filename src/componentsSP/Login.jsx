@@ -78,7 +78,7 @@ export const Login = () =>{
          <span><StyledLinkLogin to="/login">Login</StyledLinkLogin> </span>
          <span><StyledLink to="/signup">Register</StyledLink></span>
          </div>
-         <hr/>
+         <hr className="upLine"/>
          <div id="third-contain-body">
              <div id="imgOnLeft"><img src="https://accounts.practo.com/static/images/illustration.png" width="400px"/></div>
              <div id="formOnRightLogin">
