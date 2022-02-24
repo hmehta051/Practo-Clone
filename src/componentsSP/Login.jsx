@@ -42,7 +42,7 @@ export const Login = () =>{
 
     const LoginUser = ()=>{
         
-        axios.post("http://localhost:2345/login",{
+        axios.post("https://backendusers.herokuapp.com/login",{
             email,
             password:pass,
          }).then(({data})=>{  
@@ -57,7 +57,7 @@ export const Login = () =>{
 
     const LoginUserMob = ()=>{
         
-        axios.post("http://localhost:2345/loginmobile",{
+        axios.post("https://backendusers.herokuapp.com/loginmobile",{
             password:pass,
             mobile:mob,
          }).then(({data})=>{  
@@ -104,8 +104,8 @@ export const Login = () =>{
                 <input type="checkbox" /><label>Login with OTP instead of password</label>
             </div>            
             <div className="button" onClick={()=>{
-                console.log(email);
-                console.log(mob);
+               // console.log(email);
+               // console.log(mob);
                 if(email!==""){
                      LoginUser();
                 }

@@ -44,12 +44,13 @@ export const MainPage = () =>{ //Signup function
 
 
     const registerUser = ()=>{
-        axios.post("http://localhost:2345/register",{
+        axios.post("https://backendusers.herokuapp.com/register",{
             name:naam,
             email:email,
             password:pass,
             mobile:mob,
-         }).then(({data})=>{  
+         })         
+         .then(({data})=>{  
              alert(data.message);
              if(data.status==="success"){
                 window.location.replace("http://localhost:3000/login");
