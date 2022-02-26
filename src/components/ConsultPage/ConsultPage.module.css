@@ -1,0 +1,350 @@
+.ConsultPageSection {
+    background-color: #f0f0f5;
+    padding-top: 35px;
+    height: 100vh;
+  }
+  
+  .flexBox {
+    display: flex;
+  }
+  
+  .flexBox>div {
+    flex-basis: 50%;
+  }
+  
+  .flex2 {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .flex12 {
+    width: 75%;
+    /* height: 410px; */
+    background-color: #ffffff;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    /* padding: 0px 10px; */
+    position: relative;
+    font-family: 'Camphor';
+  } 
+  
+  .go_back{
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'CamphorBold';
+  }
+  
+  .flex12Header {
+    font-size: 1rem;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex12> div{
+    padding: 15px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+  
+  .flex12 > div:not(:first-child){
+    border-top: 1px solid #e0e0e5;
+  }
+  
+  
+  .flex12Header>svg {
+    width: 1rem;
+  }
+  
+  .flex12Header>span {
+    margin-left: 1rem;
+  }
+  
+  .flex12Header > span > h3{
+    font-weight: 400;
+    font-family: 'CamphorBold';
+    font-size: 1.5rem;
+  }
+  
+  .consultTime {
+    display: flex;
+    align-items: center;
+  }
+  
+  .consultTime>span {
+    margin-left: 1rem;
+  }
+  
+  .consultTime > span > strong{
+    font-weight: 400;
+    font-family: 'CamphorBold';
+  }
+  
+  
+  .dateTimeDiv {
+    display: flex;
+    font-size: 150%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0px;
+  }
+  
+  .dateTimeChange {
+    padding: 5px 0px;
+    color: #14bef0;
+    font-weight: 700;
+    font-size: 1rem;
+    
+    font-weight: 400;
+    font-family: 'CamphorBold';
+  }
+  
+  
+  .icons {
+    margin-right: 10px;
+  }
+  
+  .posterDiv {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .posterDivImgBox {
+    width: 100px;
+    margin: 1px 0px;
+    max-height: 110px;
+    margin-right: 10px;
+  }
+  
+  .posterDivImgBox>img {
+    width: 100px;
+    height: 110px;
+  }
+  
+  .posterDetail {
+    /* margin: 10px 0px; */
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    line-height: 1.6;
+    color: #787887;
+    font-size: 1rem;
+  }
+  
+  .posterDetail>h3 {
+    font-size: 1rem;
+    /* font-weight: 700; */
+    
+    font-weight: 400;
+    font-family: 'CamphorBold';
+  }
+  
+  .posterDetail>h4, .posterDetails > a {
+    font-weight: 400;
+  }
+  
+  .blue_link{
+    color: #14bef0;
+    /* font-weight: 700; */
+    font-weight: 400;
+    font-family: 'CamphorBold';
+    text-decoration: none;
+  }
+  
+  .flex1 {
+    width: 440px;
+  }
+  
+  .PatientHeader {
+    margin: 10px 0px;
+  }
+  
+  .PatientHeader>h2 {
+    /* font-size: 215%; */
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'CamphorBold';
+    margin-bottom: 25px;
+  
+  }
+  
+  .PatientHeader>div {
+    /* font-size: 140%; */
+    font-size: 1.2rem;
+  }
+  
+  .inputNameBox {
+    width: 400px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 1rem;
+    /* margin-bottom: 15px; */
+  }
+  
+  .inputNameBox>input {
+    width: 80%;
+    border: none;
+    height: 70%;
+    display: none;
+  }
+  
+  .inputNameBox>label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputNameBox>label>* {
+    margin-left: 1rem;
+  }
+  
+  
+  .followingDiv {
+    margin: 15px 0px;
+    font-size: 140%;
+  }
+  
+  .fullNameLabel {
+    font-size: 140%;
+    margin-bottom: 7px;
+  }
+  
+  .inputFullNameBox {
+    width: 400px;
+    background-color: white;
+    border-radius: 3px;
+    height: 40px;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    /* padding: 1rem; */
+  }
+  
+  .inputFullNameBox>input {
+    font-size: 1.4rem;
+    /* padding-left: 1rem; */
+    outline: none;
+    width: 80%;
+    height: 70%;
+    border: none;
+  }
+  
+  .mobileInput {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  .redstar{
+    color: #ff2c00;
+    font-size: 1rem;
+  }
+  
+  .disabled{
+    background-color: #b4b4be;
+    border: 1px solid #b4b4be;
+  }
+  
+  .confirmDiv {
+    background-color: #199fd9;
+    border: 1px solid #199fd9;
+    font-size: 140%;
+    text-align: center;
+  }
+  
+  .disabled_div{
+    background-color: #b4b4be;
+    border: 1px solid #b4b4be;
+    font-size: 140%;
+    text-align: center;
+  }
+  
+  .confirmBox {
+    position: relative;
+    margin: 0px auto;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .confirmBox > a{
+    color: white;
+    text-decoration: none;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobileNumberDiv {
+    /* font-size: 140%; */
+    font-size: 1.2rem;
+    color: #414146;
+    line-height: 0.7;
+    margin-bottom: 10px;
+  }
+  
+  .disabled_btn{
+    background-color: #787887;
+    position: relative;
+    margin: 0px auto;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .termsDiv {
+    font-size: 120%;
+  }
+  
+  .wholeOtpBox {
+    padding: 10px;
+    width: 420px;
+    padding-bottom: 60px;
+    background-color: white;
+  }
+  
+  .flex5 {
+    /* background-color: blueviolet; */
+    /* padding-right: 40px; */
+    width: 400px;
+    border-radius: 5px;
+    /* padding: 0px 10px; */
+  }
+  
+  .otpBox {
+    margin-bottom: 0px;
+    /* background-color: violet; */
+  }
+  
+  .inputOtpBox {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid black;
+    background-color: unset;
+  }
+  
+  .resendOtpBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .doctor_name, .posterDetail > h3{
+    font-weight: 400;
+    font-family: 'CamphorBold';
+  }

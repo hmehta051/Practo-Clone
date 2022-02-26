@@ -1,0 +1,49 @@
+.navCategoriesMedi{
+    display: flex;
+    gap:5%;
+    color:black;
+    font-family: Camphor,
+    sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 10%;
+    padding-right: 5%;
+    border-bottom: #E5E5F1 10px solid;
+    text-align: left;
+}
+
+.categoriesContent{
+    display: none;
+    z-index: 10;
+    border: 1px solid;
+    position:relative
+}
+
+.categoriesArrow{
+    vertical-align: bottom;
+}
+
+.categoriesCare>h3{
+    display: flex;    
+}
+
+#DisplayingSection{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap:2%
+}
+
+.SectioncontaingCategories{
+    border:solid black 2px;
+    width: 15%;
+}
+
+.SectionDisplaying{
+    border:solid 1px black;
+    width:80%; 
+}
+
+.categoriesCare:hover .categoriesContent{
+    display: block;
+}
