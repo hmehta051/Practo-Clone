@@ -6,9 +6,10 @@ import { useParams } from "react-router-dom";
 
 export const MedecineCategories=()=>{
     const id=useParams();
+    console.log(id.id);
 
     const Heading=(id)=>{
-        switch(id){
+        switch(id.id){
             case "1": return (<h1>Baby</h1>)
             case "2": return (<h1>Fitness</h1>)
             case "3": return (<h1>Family</h1>)
@@ -130,7 +131,7 @@ export const MedecineCategories=()=>{
                     </div>
                 </div>
                 <div className="SectionDisplaying">
-                    <h1>Health Condition{Heading()}</h1>
+                    <h1>Health Condition{Heading(id)}</h1>
 
                 </div>
             </div>
