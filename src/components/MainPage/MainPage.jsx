@@ -65,7 +65,6 @@ export const MainPage = () =>{ //Signup function
 
 
     return <div className="main-container">
-    Navbar
      <div className="second-container">
 
          <div className="third-container-top">
@@ -74,7 +73,7 @@ export const MainPage = () =>{ //Signup function
          </div>
          <hr className="upLine"/>
          <div id="third-container-body">
-             <div id="imgOnLeft"><img src="https://accounts.practo.com/static/images/illustration.png" width="400px"/></div>
+             <div id="imgOnLeft"><img src="https://accounts.practo.com/static/images/illustration.png"/></div>
              <div id="formOnRight">
                  
              <div className="Heading">
@@ -104,6 +103,5 @@ export const MainPage = () =>{ //Signup function
          </div>
 
      </div>
-    Footer
     </div>
 }

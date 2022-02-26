@@ -25,20 +25,25 @@ body{
     margin-top: 2%;
 }
 #imgOnLeft{
-    width:40%;
+    width:50%;
     height:100%;
     padding:3%;
+    border:1px solid purple;
+}
+#imgOnLeft>img{
+    width:100%;
 }
 #formOnRight{
-    width: 350px;
-    height: 450px;
+    border:1px solid yellow;
+    width: 400px;
+    height: 500px;
     background:rgb(255, 255, 255);
-    border: 1px solid #dddfe2;
+   /* border: 1px solid #dddfe2; */
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16p rgb(0 0 0 / 10%);
     border-radius: 4px;
     padding: 2%;
     text-align: center;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 .Heading{
