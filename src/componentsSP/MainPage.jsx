@@ -65,7 +65,6 @@ export const MainPage = () =>{ //Signup function
 
 
     return <div className="main-container">
-    Navbar
      <div className="second-container">
 
          <div className="third-container-top">
@@ -104,6 +103,5 @@ export const MainPage = () =>{ //Signup function
          </div>
 
      </div>
-    Footer
     </div>
 }
