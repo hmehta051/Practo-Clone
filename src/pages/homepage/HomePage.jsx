@@ -9,7 +9,7 @@ import { UserReviewCarousel } from './UserReviewCarousel'
 
 export const HomePage = () => {
 
-    const location_icon = process.env.PUBLIC_URL + './images/home_location_icon.svg';
+    const location_icon = process.env.PUBLIC_URL + 'https://www.freeiconspng.com/thumbs/location-icon-png/location-outline-icon-9.png';
 
     return <div className="homepage-container">
         <div className="home-search-area">
@@ -43,33 +43,33 @@ export const HomePage = () => {
         <section className="home-banner">
             <div className="home-banner-left">
                 <div className="home-banner-practo-care">
-                    <img src={process.env.PUBLIC_URL + '/images/practo_care.webp'} alt="practo_care" />
+                    <img src={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_practo_care.png'} alt="practo_care" />
                 </div>
                 <p>Choose the experts in end to end surgical care.</p>
                 <p>You are in safe hands</p>
                 <Button className="btn-knowmore">Know more</Button>
             </div>
             <div className="home-banner-right">
-                <img src={process.env.PUBLIC_URL + '/images/home_banner.webp'} alt="banner" />
+                <img src={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png'} alt="banner" />
             </div>
         </section>
         <section className="home-facilities">
-            <FacilityCard image={process.env.PUBLIC_URL + '/images/instant_video_consulation.webp'} background="#AFCFED" title="Instant Video Consultation" sub="Connect within 60 secs" />
-            <FacilityCard image={process.env.PUBLIC_URL + '/images/find_doctors.webp'} background="#98CBD6" title="Find Doctors Near You" sub="Confirmed appoinments" />
-            <FacilityCard image={process.env.PUBLIC_URL + '/images/home_medicines.webp'} background="#ccd0db" title="Medicines" sub="Essentials at your doorstep" />
-            <FacilityCard image={process.env.PUBLIC_URL + '/images/lab_tests.png'} background="#afcfed" title="Lab Tests" sub="Sample pickup at your home" />
-            <FacilityCard image={process.env.PUBLIC_URL + '/images/home_surgeries.webp'} background="#d5d8fc" title="Surgeries" sub="Safe and trusted surgery centers" />
+            <FacilityCard image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png'} background="#AFCFED" title="Instant Video Consultation" sub="Connect within 60 secs" />
+            <FacilityCard image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_find_doctors.png'} background="#98CBD6" title="Find Doctors Near You" sub="Confirmed appoinments" />
+            <FacilityCard image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_medicines.png'} background="#ccd0db" title="Medicines" sub="Essentials at your doorstep" />
+            <FacilityCard image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_lab_tests.png'} background="#afcfed" title="Lab Tests" sub="Sample pickup at your home" />
+            <FacilityCard image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_surgeries.png'} background="#d5d8fc" title="Surgeries" sub="Safe and trusted surgery centers" />
         </section>
         <section className="home-consult">
             <h2>Consult top doctors online for any health concern</h2>
             <p>Private online consultations with verified doctors in all spedialties</p>
             <div className="home-consult-card-container">
-                <ConsultCard title="Period doubts or Pregnancy" image={process.env.PUBLIC_URL + '/images/home_irregular_painful_period.webp'} />
-                <ConsultCard title="Acne, pimple or skin issues" image={process.env.PUBLIC_URL + '/images/home_acne.webp'} />
-                <ConsultCard title="Performance issues in bed" image={process.env.PUBLIC_URL + '/images/home_performance_issues.svg'} />
-                <ConsultCard title="Cold, cough or fever" image={process.env.PUBLIC_URL + '/images/home_coughing.webp'} />
-                <ConsultCard title="Child not feeling well" image={process.env.PUBLIC_URL + '/images/home_pediatric.svg'} />
-                <ConsultCard title="Depression or anxiety" image={process.env.PUBLIC_URL + '/images/home-mental-wellness.webp'} />
+                <ConsultCard title="Period doubts or Pregnancy" image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consult/consult-home/symptoms_icon/irregular-painful+period.png'} />
+                <ConsultCard title="Acne, pimple or skin issues" image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consult/consult-home/symptoms_icon/Acne.png'} />
+                <ConsultCard title="Performance issues in bed" image={process.env.PUBLIC_URL + 'https://www.practo.com/consult/static/images/top-speciality-sexology.svg'} />
+                <ConsultCard title="Cold, cough or fever" image={process.env.PUBLIC_URL + 'https://www.practostatic.com/consult/consult-home/symptoms_icon/coughing.png'} />
+                <ConsultCard title="Child not feeling well" image={process.env.PUBLIC_URL + 'https://www.practo.com/consult/static/images/top-speciality-pediatric.svg'} />
+                <ConsultCard title="Depression or anxiety" image={process.env.PUBLIC_URL + 'https://www.practostatic.com/acred/search-assets/2/12-mental-wellness.png'} />
 
             </div>
         </section>
@@ -116,12 +116,11 @@ export const HomePage = () => {
                         <button className="button button-primary">Send SMS</button>
                     </div>
                     <div className="home-store-buttons-container">
-                        <button className="button button-store"><img src={process.env.PUBLIC_URL + './images/home-google-play.svg'} alt="google-play" />Google Play</button>
-                        <button className="button button-store"><img src={process.env.PUBLIC_URL + './images/home-apple-logo.svg'} alt="google-play" />Apple Store</button>
+                        <button className="button button-store"><img src={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/google_play.png'} alt="google-play" />Google Play</button>
+                        <button className="button button-store"><img src={process.env.PUBLIC_URL + 'https://www.practostatic.com/consumer-home/desktop/images/1597423628/apple_store.png'} alt="google-play" />Apple Store</button>
                     </div>
                 </div>
             </div>
-
         </section>
     </div>
 }

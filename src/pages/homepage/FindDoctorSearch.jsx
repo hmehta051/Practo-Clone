@@ -50,7 +50,7 @@ export const FindDoctorSearch = () => {
 
     return <div className="home-search-container">
         <div className="location-search-box">
-            <img src={process.env.PUBLIC_URL + './images/home_location_icon.svg'} alt="" width="22" />
+            <img src={process.env.PUBLIC_URL + './images/location.svg'} alt="" width="22" />
             <input type="text" className="search-location-input-box" placeholder="Search location" onFocus={() => setLocationResultHidden(false)} onBlur={() => setLocationResultHidden(true)} value={searchLocation} onChange={(e) => setSearchLocation(e.target.value)} />
             <div className="search-location-input-results" hidden={locationResultHidden}>
                 {
@@ -62,7 +62,7 @@ export const FindDoctorSearch = () => {
             </div>
         </div>
         <div className="doctor-search-box">
-            <img src={process.env.PUBLIC_URL + './images/search.svg'} alt="" width="22" />
+            <img src={process.env.PUBLIC_URL + 'https://img.icons8.com/ios-glyphs/30/000000/search--v1.png'} alt="" width="22" />
             <input type="text" className="search-doctor-input-box" placeholder="Search doctors, clinics, hospitals, etc." onFocus={() => setDoctorResultHidden(false)} onBlur={() => setDoctorResultHidden(true)} value={searchDoctor} onChange={(e) => setSearchDoctor(e.target.value)} />
             <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                 {
