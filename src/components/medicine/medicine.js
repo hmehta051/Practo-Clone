@@ -26,6 +26,10 @@ import alternate from "../images/alternate.webp";
 import heart from "../images/heart.webp";
 import cough from "../images/cough.webp";
 import daibetes from "../images/diabaties.webp";
+import health from "../images/health.webp";
+import device from "../images/device.webp";
+import personal from "../images/personal.webp";
+import women from "../images/women.webp";
 
 import article1 from "../images/article1.webp";
 import article2 from "../images/article2.png";
@@ -55,7 +59,7 @@ export const Medicine=()=>{
                 index.current=index.current+1
 
             setimageURL(CorouselImage[index.current]);
-            console.log(index.current);
+            
         },5000);        
     },[])
 
@@ -148,8 +152,9 @@ export const Medicine=()=>{
         )
     }
 
-    const [categoriesMedi,setcategoriesMedi]=useState(false);
+    const [categoriesMedi,setcategoriesMedi]=useState(true);
     const CategoriesMediTrue=()=>{
+        console.log(categoriesMedi);
         return (
             <SlideInRight durationMs={1500}>
                 <div className="mediFlex mediConditions">
@@ -157,7 +162,7 @@ export const Medicine=()=>{
                     <img src={fitness} alt="sexual" className="menuSize"/>
                     <img src={family} alt="weight" className="menuSize"/>
                     <img src={alternate} alt="pain" className="menuSize"/>
-                    <ArrowCircleRightTwoToneIcon className="nextsectionmedi" onclick={()=>{setcategoriesMedi(false)}}/>
+                    <ArrowCircleRightTwoToneIcon className="nextsectionmedi" onClick={()=>{setcategoriesMedi(false)}}/>
                 </div>
             </SlideInRight>
         )
@@ -166,11 +171,11 @@ export const Medicine=()=>{
         return (
             <SlideInLeft durationMs={1500}>
                 <div className="mediFlex mediConditions">
-                    <ArrowCircleLeftTwoToneIcon className="nextsectionmedi" onclick={()=>setcategoriesMedi(true)}/>
-                    <img src={baby} alt ="skin" className="menuSize"/>
-                    <img src={fitness} alt="sexual" className="menuSize"/>
-                    <img src={family} alt="weight" className="menuSize"/>
-                    <img src={alternate} alt="pain" className="menuSize"/>                    
+                    <ArrowCircleLeftTwoToneIcon className="nextsectionmedi" onClick={()=>{setcategoriesMedi(true)}}/>
+                    <img src={women} alt ="skin" className="menuSize"/>
+                    <img src={health} alt="sexual" className="menuSize"/>
+                    <img src={personal} alt="weight" className="menuSize"/>
+                    <img src={device} alt="pain" className="menuSize"/>                    
                 </div>
             </SlideInLeft>
         )
@@ -205,7 +210,7 @@ export const Medicine=()=>{
                 {categoriesMedi?CategoriesMediTrue():CategoriesMediFalse()}
             </div>
             <div>
-                <h1>Popular Products</h1>
+                {/* <h1>Popular Products</h1> */}
             </div>
             <div className="mediFlex articleMedical">
                 <div className="mediarticle">
