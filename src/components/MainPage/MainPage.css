@@ -33,11 +33,10 @@ body{
     width:100%;
 }
 #formOnRight{
-    border:1px solid yellow;
     width: 400px;
     height: 500px;
     background:rgb(255, 255, 255);
-   /* border: 1px solid #dddfe2; */
+    border: 1px solid #dddfe2; 
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16p rgb(0 0 0 / 10%);
     border-radius: 4px;
     padding: 2%;
@@ -47,15 +46,17 @@ body{
 
 .Heading{
     display: flex;
-    margin-top: -1.7rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1.2rem;
 }
 .Heading > h4{
     color:rgb(120, 120, 135);
-    font-size:16px;
+    font-size:17px;
+    font-weight: 600;
 }
 .Heading > p{
     margin-left: 5rem;
-    margin-top: 1.4rem;
+    margin-top: -0rem;
     font-size: 14px;
 }
 .upLine{
@@ -74,8 +75,9 @@ body{
     color: rgb(99, 94, 94);
     margin: 0.5rem 0;
     padding: 0.5rem 0.75rem;
-    width: 92%;
+    width: 100%;
     font-size: 14px;
+    height:2.1rem;
 }
 #formOnRight > input::placeholder{
     color: rgb(184, 179, 179);
@@ -90,12 +92,16 @@ body{
     color: #fff;
     font-size: 1rem;
     padding: 0.5rem;
-    margin: 0.5rem 0;
+    margin: -1rem 0;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+    font-weight: normal;
 }
-
+#formOnRight>.button:hover{
+    border:2px solid black;
+    color:black;
+}
 #inp{
     text-align: left;
     font-size:16px;
@@ -111,19 +117,20 @@ p{
 }
 .check{
     display: flex;
+    margin-top: 0.3rem;
 }
 
 label{
     text-align: left;
-    margin-top: 0.2rem;
-    margin-left: 0.8rem;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 12px;
     color: rgb(120, 120, 135);
 }
 .smallp{
     margin-top: 0.5rem;
-    margin-left: 2.1rem;
+    margin-left: 1.4rem;
     margin-bottom: 2rem;
     font-size: 10px;
     color:rgb(120, 120, 135);

@@ -94,10 +94,10 @@ export const Login = () =>{
             <input type="password" placeholder="Password" onChange={(e)=>{setPass(e.target.value)}}/>
             <br/>
             <br/>
-            <div className="check">
+            <div className="checkLogin">
                 <input type="checkbox" /><label>Remember me for 30 days</label>
             </div>
-            <div className="check">
+            <div className="checkLogin">
                 <input type="checkbox" /><label>Login with OTP instead of password</label>
             </div>            
             <div className="button" onClick={()=>{
