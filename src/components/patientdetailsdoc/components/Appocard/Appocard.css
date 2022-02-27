@@ -1,0 +1,84 @@
+.a-left-side{
+    /* border: 1px solid red; */
+    width: 25rem;
+    background-color: white;
+    margin-left: 20rem;
+    margin-top: 2.5rem;
+    height: 450px;
+}
+.a-left-head{
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    
+}
+.appoclinic{
+    color: rgb(83, 81, 81);
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.Dateand{
+    width: 4%;
+    height: 4%;
+    margin-top: 1rem;
+    margin-left: 15px;
+}
+.dateflex{
+    display: flex;
+}
+.date11{
+    /* border: 1px solid red; */
+    width: 30%;
+    margin-left: 10%;
+    margin-top:-6%;
+}
+.changedt{
+    color: rgb(75, 236, 236);
+    margin-left: -57%;
+}
+.leftmid{
+    /* border: 1px solid red; */
+    width: 50%;
+    float: right;
+    margin-top: -12%;
+}
+.leftlast{
+    margin-top: -21px;
+}
+.thirdblock{
+    display: flex;
+    margin-bottom: 5rem;
+}
+.gridname{
+    font-size: 13px;
+    text-align: left;
+    margin-left: 2rem;
+    color: #a5a4a8;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.drarchanaimg{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.kanpurimg{
+    /* border: 1px solid green; */
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.archdetail{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin-left: 35%;
+    margin-top: -28%;
+}
+.name1{
+    color: #656468;
+    font-weight: 600;
+}
+.name2{
+    color: #a5a4a8;
+    font-weight: 400;
+}

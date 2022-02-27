@@ -1,0 +1,145 @@
+body{
+    color: white;
+    font-family: 'CamphorW01-Regular';
+}
+.main-container{
+    width:100%;
+}
+.second-container{
+    width:70%;
+    height:500px;
+    margin-left:15%;
+    margin-bottom: 10%;
+}
+.third-container-top{
+    margin:auto;
+    padding:0.5rem;
+    text-align: center;
+}
+.third-container-top>span{
+    margin:3%;
+}
+
+#third-container-body{ 
+    display: flex;
+    margin-top: 2%;
+}
+#imgOnLeft{
+    width:50%;
+    height:100%;
+    padding:3%;
+}
+#imgOnLeft>img{
+    width:100%;
+}
+#formOnRight{
+    width: 400px;
+    height: 500px;
+    background:rgb(255, 255, 255);
+    border: 1px solid #dddfe2; 
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16p rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.Heading{
+    display: flex;
+    margin-top: -0.5rem;
+    margin-bottom: 1.2rem;
+}
+.Heading > h4{
+    color:rgb(120, 120, 135);
+    font-size:17px;
+    font-weight: 600;
+}
+.Heading > p{
+    margin-left: 5rem;
+    margin-top: -0rem;
+    font-size: 14px;
+}
+.upLine{
+    border: 1px solid #dddfe2;    
+}
+.Line{
+    margin-top: -0.8rem;
+    border: 0.5px solid #dddfe2;
+    width:109.5%;
+    margin-left: -1.1rem;
+}
+#formOnRight > input{
+    border-radius: 2px;
+    border: 1px solid rgb(190, 190, 190);
+    outline: none;
+    color: rgb(99, 94, 94);
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    font-size: 14px;
+    height:2.1rem;
+}
+#formOnRight > input::placeholder{
+    color: rgb(184, 179, 179);
+    font-size: 12px;
+}
+#formOnRight>input:focus{
+    border:1px solid#13BEF0;
+}
+
+#formOnRight > .button{
+    background: #13BEF0;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: -1rem 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-weight: normal;
+}
+#formOnRight>.button:hover{
+    border:2px solid black;
+    color:black;
+}
+#inp{
+    text-align: left;
+    font-size:16px;
+    color: rgb(120, 120, 135);
+    margin-left: 1%;
+    margin-top:0.3rem;
+}
+p{
+    text-align: left;
+    font-size:12px;
+    color: rgb(120, 120, 135);
+    margin-left: 1%;   
+}
+.check{
+    display: flex;
+    margin-top: 0.3rem;
+}
+
+label{
+    text-align: left;
+    margin-top: -0.2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    color: rgb(120, 120, 135);
+}
+.smallp{
+    margin-top: 0.5rem;
+    margin-left: 1.4rem;
+    margin-bottom: 2rem;
+    font-size: 10px;
+    color:rgb(120, 120, 135);
+}
+.here{
+    color:orange;
+    font-size: 11px;
+}
+.smalla{
+    text-decoration: none;
+    color: #13BEF0;
+}

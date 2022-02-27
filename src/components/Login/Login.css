@@ -1,0 +1,113 @@
+body{
+    color: white;
+    font-family: 'CamphorW01-Regular';
+}
+.main-contain{
+    width:100%;
+    margin-bottom: 8%;
+}
+.second-contain{
+    width:70%;
+    height:500px;
+    margin-left:15%;
+}
+.third-contain-top{
+    margin:auto;
+    padding:0.5rem;
+    text-align: center;
+}
+.third-contain-top>span{
+    margin:3%;
+}
+.upLine{
+    border: 1px solid #dddfe2;    
+}
+#third-contain-body{ 
+    display: flex;
+}
+#imgOnLeft{
+    width:50%;
+    height:100%;
+    padding:3%;
+}
+#imgOnLeft>img{
+    width:100%;
+}
+#formOnRightLogin{
+    width: 400px;
+    height: 300px;
+    background:rgb(255, 255, 255);
+    border: 1px solid #dddfe2;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16p rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+#formOnRightLogin > input{
+    border-radius: 2px;
+    border: 1px solid rgb(190, 190, 190);
+    outline: none;
+    color: rgb(99, 94, 94);
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    font-size: 14px;
+    height:2.1rem;
+}
+#formOnRightLogin > input::placeholder{
+    color: rgb(184, 179, 179);
+    font-size: 12px;
+}
+#formOnRightLogin>input:focus{
+    border:1px solid#13BEF0;
+}
+
+#formOnRightLogin > .button{
+    background: #13BEF0;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: -1rem 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+#formOnRightLogin>.button:hover{
+    border:2px solid black;
+    color:black;
+}
+#inp{
+    text-align: left;
+    font-size:16px;
+    color: rgb(120, 120, 135);
+    margin-left: 1%;
+    margin-top:0.3rem;
+}
+p{
+    text-align: left;
+    font-size:12px;
+    color: rgb(120, 120, 135);
+    margin-left: 1%;   
+}
+.checkLogin{
+    display: flex;
+    margin-top: -0.5rem;;
+    margin-bottom: 1rem;
+}
+
+label{
+    text-align: left;
+    margin-top: 0.2rem;
+    margin-left: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+    color: rgb(120, 120, 135);
+}
+
+.smalla{
+    text-decoration: none;
+    color: #13BEF0;
+}

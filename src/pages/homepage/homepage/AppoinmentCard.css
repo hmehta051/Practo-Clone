@@ -1,0 +1,39 @@
+.appoinment-card {
+    width: 280px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.appoinment-card-img-container {
+    width: 280px;
+    height: 200px;
+}
+
+.appoinment-card-image-container>img {
+    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.appoinment-card-title {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.appoinment-card-sub {
+    font-size: 14px;
+}
+
+.appoinment-card:hover img {
+    box-shadow: 2px 2px 6px 0 rgb(0 0 0 / 10%);
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.appoinment-card:hover .appoinment-card-title {
+    color: #14bef0;
+}
