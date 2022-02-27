@@ -15,7 +15,7 @@ text-decoration: none;
 
 &:focus{
     color:#13BEF0;
-    padding-bottom:1rem;
+    padding-bottom:0.5rem;
     border-bottom: 3px solid #13BEF0;
     text-decoration:none;
 }
@@ -27,7 +27,7 @@ text-decoration: none;
 
 &{
     color:#13BEF0;
-    padding-bottom:1rem;
+    padding-bottom:0.5rem;
     border-bottom: 3px solid #13BEF0;
     text-decoration:none;
 }
@@ -69,7 +69,6 @@ export const Login = () =>{
     }
 
     return <div className="main-contain">
-    Navbar
      <div className="second-contain">
 
          <div className="third-contain-top">
@@ -116,6 +115,5 @@ export const Login = () =>{
          </div>
 
      </div>
-    Footer
     </div>
 }
